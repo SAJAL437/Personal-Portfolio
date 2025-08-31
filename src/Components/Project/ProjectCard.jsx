@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
         <motion.img
           src={project.image}
           alt={`${project.name} preview`}
-          className="h-full w-full object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover  object-left rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
           onLoad={() => setIsLoaded(true)}
           loading="lazy"
           initial={{ opacity: 0 }}

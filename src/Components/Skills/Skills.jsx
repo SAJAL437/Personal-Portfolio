@@ -1,11 +1,11 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiSpringboot, SiHibernate, SiSpringsecurity } from "react-icons/si";
+import { SiSpringboot, SiHibernate } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import SkillsMobile from "./SkillsMobile";
-import { FaBootstrap, FaHtml5, FaJava, FaJsSquare } from "react-icons/fa";
+import { FaBootstrap, FaHtml5, FaJava, FaJsSquare, FaPython } from "react-icons/fa";
 
 export const SKILLS = [
   {
@@ -47,6 +47,11 @@ export const SKILLS1 = [
     experience: "1+ year",
   },
   {
+    icon: <FaPython className="text-4xl text-blue-900 lg:text-5xl" />,
+    name: "MySQL",
+    experience: "1+ year",
+  },
+  {
     icon: <FaJava className="text-4xl text-red-600 lg:text-5xl" />,
     name: "Java",
     experience: "2+ years",
@@ -61,11 +66,11 @@ export const SKILLS1 = [
     name: "Spring Boot",
     experience: "2+ years",
   },
-  {
-    icon: <SiSpringsecurity className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Spring Security",
-    experience: "1+ year",
-  },
+  // {
+  //   icon: <SiSpringsecurity className="text-4xl text-green-600 lg:text-5xl" />,
+  //   name: "Spring Security",
+  //   experience: "1+ year",
+  // },
 ];
 
 const Skills = () => {
@@ -94,6 +99,7 @@ const Skills = () => {
               >
                 <h3 className="item-center">{skill.icon}</h3>
               </motion.li>
+
             ))}
           </ul>
         </div>

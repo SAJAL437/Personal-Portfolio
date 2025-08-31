@@ -4,7 +4,7 @@ const HERO = {
   description:
     "As a passionate and motivated Full Stack Developer,  I possess a solid understanding of both front-end and back-end technologies, enabling me to contribute effectively to the development of dynamic web applications.", // Add your own description here
 };
-import carlImg from "/profile.jpg";
+import carlImg from "/profile1.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -37,8 +37,8 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
               src={carlImg}
-              width={350}
-              height={350}
+              width={500}
+              height={500}
               alt="Sajal Tiwari"
               className="rounded-3xl"
             />

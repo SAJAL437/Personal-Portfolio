@@ -4,7 +4,7 @@ export const EDUCATION = [
     institution: "CHHATRAPATI SHAHU JI MAHARAJ UNIVERSITY, Kanpur, UP",
     duration: "August 2023 - Present",
     description:
-      "This program has strengthened my analytical thinking, problem-solving abilities, and logical reasoning skills. Alongside my academic studies, I have explored applications of mathematics in computer science, developing expertise in programming languages such as Java, Python, and C/C++. My coursework and projects have enhanced my ability to tackle complex problems and build efficient algorithms, laying a strong foundation for a career in software development.",
+      "This program has strengthened my analytical thinking, problem-solving abilities, and logical reasoning skills. Alongside my academic studies, I have explored applications of mathematics in computer science, developing expertise in programming languages such as Java and Python. My coursework and projects have enhanced my ability to tackle complex problems and build efficient algorithms, laying a strong foundation for a career in software development.",
   },
   {
     degree: "HIGHER SECONDARY EDUCATION",

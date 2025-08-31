@@ -22,9 +22,11 @@ export const PROJECTS = [
       "RestApi",
     ],
     description:
-      "An e-commerce website built with React, Redux, and Tailwind CSS, integrated with Node.js and MongoDB for backend support. It allows users to browse, search, and purchase products with a smooth UI experience.",
+      "An e-commerce website built with React, Redux, and Tailwind CSS, integrated with Springboot and MySQL for backend support. It allows users to browse, search, and purchase products with a smooth UI experience.",
     image: "/laxmi1.png",
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/SAJAL437/Laxmi-server",
+        liveDemo: "https://laxmishop.netlify.app",
+
   },
   {
     id: 2,
@@ -40,7 +42,7 @@ export const PROJECTS = [
   {
     id: 3,
     name: "Nayi Disha",
-    detImg: "/interior.png",
+    detImg: "/nayidisha.png",
     projectname: "nayiDisha",
     techStack: [
       "React",
@@ -56,14 +58,14 @@ export const PROJECTS = [
     description:
       "Nayi Disha is a full-stack web application designed to give citizens a smart and easy platform to raise complaints on public issues such as traffic problems, water shortages, electricity failures, corruption, and more.",
     image: "/nayi.jpg",
-    githubLink: "https://github.com/SAJAL437/NayiDishaUI",
+    githubLink: "https://github.com/SAJAL437/NayiDishaServer",
   },
   {
     id: 4,
     name: "Earnest & Feast",
     projectname: "earnestandfeast",
     detImg: "/interior.png",
-    techStack: ["React", "Tailwind CSS", "Framer Motion,react-router"],
+    techStack: ["React", "Tailwind CSS", "Framer Motion","react-router"],
     description:
       "A modern interior design web app offering creative home décor solutions, personalized designs, and stylish space transformations.",
     image: "/interior.jpg",

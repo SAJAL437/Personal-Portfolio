@@ -70,7 +70,7 @@ const Resume = () => {
           </button>
 
           {/* Full Stack Resume Button */}
-          <button
+          {/* <button
             onClick={() => handleResumeSelect("fullstack")}
             className={`px-4 py-2 w-full sm:w-auto font-semibold rounded-full text-sm transition-all duration-300 ${
               selectedResume === "fullstack"
@@ -80,7 +80,7 @@ const Resume = () => {
             aria-label="View Full Stack Resume"
           >
             Full Stack Resume
-          </button>
+          </button> */}
         </div>
       </div>
 
