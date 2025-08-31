@@ -4,7 +4,7 @@ const HERO = {
   description:
     "As a passionate and motivated Full Stack Developer,  I possess a solid understanding of both front-end and back-end technologies, enabling me to contribute effectively to the development of dynamic web applications.", // Add your own description here
 };
-import carlImg from "../assets/carl.jpeg";
+import carlImg from "/profile.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -23,7 +23,6 @@ const Hero = () => {
           <p className=" text-3xl tracking-tighter lg:text-4xl">{HERO.greet}</p>
 
           <p className="mb-8  text-xl">{HERO.description}</p>
-
         </motion.div>
 
         <motion.div
@@ -38,8 +37,8 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
               src={carlImg}
-              width={550}
-              height={550}
+              width={350}
+              height={350}
               alt="Sajal Tiwari"
               className="rounded-3xl"
             />

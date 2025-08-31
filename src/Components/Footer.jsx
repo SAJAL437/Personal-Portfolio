@@ -1,29 +1,22 @@
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 
 import {
-  FaXTwitter,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaDiscord,
   FaInstagram,
 } from "react-icons/fa6";
 
 import { motion } from "framer-motion";
-import { FaHackerrank } from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 export const MEDIA_LINKS = [
   {
-    href: "https://www.hackerrank.com/profile/sajaltiwari437",
-    icon: <FaHackerrank fontSize={25} className="hover:opacity-80" />,
+    href: "https://www.geeksforgeeks.org/user/sajaltiwkj1q",
+    icon: <SiGeeksforgeeks fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://www.instagram.com/sajal_tiwari_437/#",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://github.com/SAJAL437",

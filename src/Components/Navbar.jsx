@@ -8,7 +8,7 @@ export const NAVIGATION_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -76,7 +76,8 @@ const Navbar = () => {
 
             <div className="items-center ml-2 space-x-2">
               <a
-                href="https://www.freelancer.in/u/Sajal437"
+                // href="https://www.freelancer.in/u/Sajal437"
+                href="#contact"
                 className="border rounded-full relative -end-10 px-3 py-1 items-center bg-transparent text-sm font-semibold text-gray-50 hover:bg-gray-100 hover:text-gray-900 duration-500"
               >
                 Hire Me
@@ -98,7 +99,8 @@ const Navbar = () => {
             <div className="flex items-center gap-10">
               <div className="items-center">
                 <a
-                  href="https://www.freelancer.in/u/Sajal437"
+                  // href="https://www.freelancer.in/u/Sajal437"
+                  href="#contact"
                   className="border rounded-full relative -end-10 px-3 py-1 items-center bg-transparent text-sm font-semibold text-gray-50 hover:bg-gray-100 hover:text-gray-900 duration-500"
                 >
                   Hire Me
