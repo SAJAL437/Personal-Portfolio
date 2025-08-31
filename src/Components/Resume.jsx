@@ -66,7 +66,7 @@ const Resume = () => {
             }`}
             aria-label="View Frontend Resume"
           >
-            Frontend Resume
+            Resume
           </button>
 
           {/* Full Stack Resume Button */}
