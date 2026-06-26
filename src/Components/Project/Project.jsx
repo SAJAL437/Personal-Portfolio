@@ -8,6 +8,8 @@ export const PROJECTS = [
     name: "Laxmi",
     projectname: "laxmi",
     tagline: "NEXT-GEN E-COMMERCE ENGINE",
+    category: "Full-Stack E-Commerce",
+    timeline: "3 Months (Production Ready)",
     techStack: [
       "React",
       "Redux Toolkit",
@@ -18,7 +20,16 @@ export const PROJECTS = [
     ],
     description:
       "A high-performance e-commerce engine features seamless state orchestration, dynamic inventory pipelines, and fluid UI architectures.",
+    longDescription:
+      "Laxmi is a next-generation enterprise-grade architecture designed for zero latency and fluid transaction flows. It integrates a fully optimized database layer with robust indexing and real-time state consistency driven by Redux. The backend leverages structured decoupled Spring Boot modules to ensure hyper-scale readiness.",
+    features: [
+      "Dynamic inventory management pipelines with automated low-stock warnings.",
+      "Secure state management orchestration using Redux Toolkit slices.",
+      "JWT stateless session token authentication with custom middleware guards.",
+      "Optimized relational database models with indexed target query performance.",
+    ],
     image: "/laxmi1.png",
+    detImg: "/laxmi1.png",
     githubLink: "https://github.com/SAJAL437/Laxmi-server",
     liveDemo: "https://laxmishop.netlify.app",
     color: "from-cyan-500/15 via-transparent to-blue-600/5",
@@ -28,6 +39,8 @@ export const PROJECTS = [
     name: "Nayi Disha",
     projectname: "nayi-disha",
     tagline: "GEOSPATIAL GRIEVANCE PLATFORM",
+    category: "Gov-Tech / GIS Platform",
+    timeline: "2.5 Months (Gov Initiative)",
     techStack: [
       "React",
       "Spring Boot",
@@ -38,7 +51,16 @@ export const PROJECTS = [
     ],
     description:
       "A smart geospatial full-stack platform for citizens to report public grievances with real-time vector map telemetry overlays.",
+    longDescription:
+      "Nayi Disha engineered a transparent communication mesh between local municipal authorities and civic populations. By mapping geographical coordinates natively inside Leaflet layers, citizens can accurately drop location vectors, which are categorized dynamically by backend routing managers.",
+    features: [
+      "Interactive OpenStreetMap engine rendering customized vector pins natively.",
+      "Automated latitude/longitude geocoding pipeline for instant municipal dispatch.",
+      "Role-based administrative dashboards for state officers to stream ticket updates.",
+      "Real-time reactive notification delivery systems built over scalable REST layers.",
+    ],
     image: "/nayi.jpg",
+    detImg: "/nayi.jpg",
     githubLink: "https://github.com/SAJAL437/NayiDishaServer",
     color: "from-fuchsia-500/15 via-transparent to-purple-600/5",
   },
@@ -47,6 +69,8 @@ export const PROJECTS = [
     name: "Earnest & Feast",
     projectname: "earnest-feast",
     tagline: "PREMIUM INTERIOR ARCHITECTURE",
+    category: "Creative Agency Portfolio",
+    timeline: "1.5 Months (UI/UX Case Study)",
     techStack: [
       "React",
       "Tailwind CSS",
@@ -56,7 +80,16 @@ export const PROJECTS = [
     ],
     description:
       "A modern interior design web app offering creative home décor solutions, personalized designs, and stylish space transformations.",
+    longDescription:
+      "Earnest & Feast explores the cross-section of high-definition digital photography and silky motion design. Using modular atomic layouts, the site achieves ultra-fluid rendering speeds on mobile and web viewports alike, preserving design accuracy across layout contexts.",
+    features: [
+      "Cinematic viewports with staggered parallax scrolling effects via Framer Motion.",
+      "Clean filter matrix system processing media galleries with hardware acceleration.",
+      "SEO-friendly single-page system structure optimizing semantic accessibility scores.",
+      "Fluid routing paths mapping nested design projects dynamically inside the URL space.",
+    ],
     image: "/interior.jpg",
+    detImg: "/interior.jpg",
     githubLink: "https://github.com/SAJAL437/Interior-UI",
     liveDemo: "https://earnestandfeast.netlify.app",
     color: "from-emerald-500/15 via-transparent to-teal-600/5",
