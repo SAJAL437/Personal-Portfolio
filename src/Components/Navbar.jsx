@@ -21,6 +21,26 @@ const Navbar = () => {
     navigate("/Resume");
   };
 
+  const handleNavigation = (item) => {
+    setIsMobileMenuOpen(false); // Mobile menu band karein
+
+    if (item.label === "Resume") {
+      navigate("/Resume");
+    } else {
+      // Scroll logic
+      const targetElement = document.querySelector(item.href);
+      if (targetElement) {
+        // Yahan hum window scroll use kar rahe hain
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Header height ke hisab se offset
+          behavior: "smooth",
+        });
+      } else {
+        console.error(`Element with id ${item.href} not found!`);
+      }
+    }
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -41,7 +61,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 z-50 pl-2 pr-4 ">
+      {/* ─── FIXED CLASSES REMOVED FROM HERE FOR PERFECT FLOATING DOCK ─── */}
+      <nav className="w-full z-50 pl-2 pr-4 mt-6 md:mt-8">
         {/* Desktop mode */}
         <div
           className="mx-auto hidden max-w-4xl items-center justify-center rounded-full border 
@@ -59,12 +80,17 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     {item.label === "Resume" ? (
-                      <button onClick={handleopenresume}
-                      className="text-gray-50 text-sm font-semibold hover:text-yellow-400 cursor-pointer">{item.label}</button>
+                      <button
+                        onClick={handleopenresume}
+                        className="text-gray-50 text-sm font-semibold hover:text-yellow-400 cursor-pointer"
+                      >
+                        {item.label}
+                      </button>
                     ) : (
                       <a
                         className="text-sm hover:text-yellow-400"
                         href={item.href}
+                        onClick={() => handleNavigation(item)}
                       >
                         {item.label}
                       </a>
@@ -76,7 +102,6 @@ const Navbar = () => {
 
             <div className="items-center ml-2 space-x-2">
               <a
-                // href="https://www.freelancer.in/u/Sajal437"
                 href="#contact"
                 className="border rounded-full relative -end-10 px-3 py-1 items-center bg-transparent text-sm font-semibold text-gray-50 hover:bg-gray-100 hover:text-gray-900 duration-500"
               >
@@ -87,8 +112,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile mode */}
-
-        <div className="rounded-3xl  bg-white/10 backdrop-blur-md lg:hidden border px-5 ">
+        <div className="rounded-3xl bg-white/10 backdrop-blur-md lg:hidden border px-5 ">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
@@ -99,7 +123,6 @@ const Navbar = () => {
             <div className="flex items-center gap-10">
               <div className="items-center">
                 <a
-                  // href="https://www.freelancer.in/u/Sajal437"
                   href="#contact"
                   className="border rounded-full relative -end-10 px-3 py-1 items-center bg-transparent text-sm font-semibold text-gray-50 hover:bg-gray-100 hover:text-gray-900 duration-500"
                 >
@@ -129,16 +152,21 @@ const Navbar = () => {
                   key={index}
                 >
                   {item.label === "Resume" ? (
-                      <button onClick={handleopenresume}
-                      className="text-gray-50 text-sm font-semibold hover:text-yellow-400 cursor-pointer">{item.label}</button>
-                    ) : (
-                      <a
-                        className="text-sm hover:text-yellow-400"
-                        href={item.href}
-                      >
-                        {item.label}
-                      </a>
-                    )}
+                    <button
+                      onClick={handleopenresume}
+                      className="text-gray-50 text-sm font-semibold hover:text-yellow-400 cursor-pointer"
+                    >
+                      {item.label}
+                    </button>
+                  ) : (
+                    <a
+                      className="text-sm hover:text-yellow-400"
+                      href={item.href}
+                      onClick={(e) => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </motion.li>
               ))}
             </motion.ul>
