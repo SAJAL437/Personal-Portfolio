@@ -115,7 +115,7 @@ const Navbar = () => {
         <div className="rounded-3xl bg-white/10 backdrop-blur-md lg:hidden border px-5 ">
           <div className="flex items-center justify-between">
             <div>
-              <a href="#">
+              <a href="/">
                 <img src={logo} width={100} height={100} alt="logo" />
               </a>
             </div>
