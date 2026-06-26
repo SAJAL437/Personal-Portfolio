@@ -70,7 +70,7 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-start -start-4 gap-10">
             <div>
-              <a href="#">
+              <a href="/">
                 <img src={logo} width={200} height={150} alt="logo" />
               </a>
             </div>
