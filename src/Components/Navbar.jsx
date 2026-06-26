@@ -162,7 +162,7 @@ const Navbar = () => {
                     <a
                       className="text-sm hover:text-yellow-400"
                       href={item.href}
-                      onClick={(e) => handleLinkClick(e, item.href)}
+                      onClick={() => handleNavigation(item)}
                     >
                       {item.label}
                     </a>
